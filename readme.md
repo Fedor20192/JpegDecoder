@@ -1,6 +1,6 @@
 # JPEG Decoder
 
-<img src="tests/bad_quality.jpg" alt="harold" width="600"/>
+<img src="jpeg-decoder/tests/bad_quality.jpg" alt="harold" width="600"/>
 
 В этом домашнем задании вам предстоит реализовать декодер JPEG. Подробности будут рассказаны на семинарах.
 
@@ -35,7 +35,7 @@ sudo apt install libjpeg-dev libpng-dev libfftw3-dev
 brew install libjpeg libpng fftw
 ```
 
-На MacOS могут возникать проблемы с определением этих библиотек CMake. Инструкции для такого случая есть в [CMakeLists.txt](./CMakeLists.txt).
+На MacOS могут возникать проблемы с определением этих библиотек CMake. Инструкции для такого случая есть в [CMakeLists.txt](jpeg-decoder/CMakeLists.txt).
 
 ## Оценивание
 
@@ -120,7 +120,7 @@ brew install libjpeg libpng fftw
 
 #### Запуск `fuzz_decoder_baseline` c корпусом
 
-Чтобы фаззинг с большей вероятностью нашел баги в вашем коде, будем запускать его с корпусом. В качестве стартового корпуса будем использовать изображения из [tests](./tests). Скопируйте куда-нибудь эту директорию и передайте путь к копии в аргументах командной строки:
+Чтобы фаззинг с большей вероятностью нашел баги в вашем коде, будем запускать его с корпусом. В качестве стартового корпуса будем использовать изображения из [tests](jpeg-decoder/tests). Скопируйте куда-нибудь эту директорию и передайте путь к копии в аргументах командной строки:
 
 ```bash
 ./fuzz_decoder_baseline path_to_copied_tests_directory

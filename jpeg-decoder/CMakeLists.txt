@@ -46,7 +46,7 @@ if (NOT ${JPEG_DECODER_DEPS_PRESENT})
     return()
 endif()
 
-add_catch(test_decoder_huffman 
+add_catch(test_decoder_huffman
     huffman/tests/test_huffman.cpp
     utils/logger_init.cpp
 )
